@@ -12,7 +12,7 @@
 			],
 			"SupportedInMultiActions": false,
 			"Tooltip": "Copy the entire target widget as an image to the clipboard.",
-			"UUID": "com.naotsun.graphprinter.clipboard.all"
+			"UUID": "com.naotsun.graphprinter"
 		}
 	],
 	"Category": "Unreal Engine",

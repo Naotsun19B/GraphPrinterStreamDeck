@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace GraphPrinter
 {
-    [ActionUuid(Uuid="com.yourcompany.plugin.action.DefaultPluginAction")]
+    [ActionUuid(Uuid="com.naotsun.graphprinter.clipboard.all")]
     public class GraphPrinterAction : BaseStreamDeckActionWithSettingsModel<Models.WebSocketSettingsModel>
     {
         public override async Task OnKeyUp(StreamDeckEventPayload args)
         {
-            //update settings
+            await Manager.SetTitleAsync(args.context, args.context);
             await Manager.SetSettingsAsync(args.context, SettingsModel);
         }
 
