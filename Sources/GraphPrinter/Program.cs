@@ -1,16 +1,7 @@
-﻿using McMaster.Extensions.CommandLineUtils;
-using Microsoft.Extensions.Logging;
-using Serilog;
-using Serilog.Settings.Configuration;
+﻿// Copyright 2022 Naotsun. All Rights Reserved.
+
 using StreamDeckLib;
-using System;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Threading;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Configuration;
-using System.Diagnostics;
 
 namespace GraphPrinter
 {

@@ -1,8 +1,7 @@
-﻿using StreamDeckLib;
+﻿// Copyright 2022 Naotsun. All Rights Reserved.
+
+using StreamDeckLib;
 using StreamDeckLib.Messages;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace GraphPrinter
