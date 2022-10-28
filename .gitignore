@@ -52,4 +52,8 @@
 !DistributionTool.exe
 
 # Folder of exported plugins
-/Release
+Release/
+
+# Generated binary files and debug objects, etc.
+Sources/*/bin/
+Sources/*/obj/
