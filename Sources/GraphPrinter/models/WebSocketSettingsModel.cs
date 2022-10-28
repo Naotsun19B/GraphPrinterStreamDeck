@@ -1,6 +1,7 @@
 ﻿namespace GraphPrinter.Models
 {
-    public abstract class WebSocketSettingsModel
+    // The IDE recommends adding abstract, but if we do, it will not work properly.
+    public class WebSocketSettingsModel
     {
         public string ServerURL { get; set; }
         public string ServerProtocol { get; set; }

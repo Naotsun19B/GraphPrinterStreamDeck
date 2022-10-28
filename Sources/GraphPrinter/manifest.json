@@ -2,7 +2,7 @@
 	"Actions": [
 		{
 			"Icon": "images/actionIcon",
-			"Name": "GraphPrinterAction",
+			"Name": "Copy All Area Of Widget To Clipboard",
 			"States": [
 				{
 					"Image": "images/actionDefaultImage",
@@ -15,7 +15,7 @@
 			"UUID": "com.naotsun.graphprinter.clipboard.all"
 		}
 	],
-	"Category": "Unreal Engine",
+	"Category": "Graph Printer",
 	"CategoryIcon": "images/category/categoryIcon",
 	"Disabled":  false,
 	"Author": "Naotsun",

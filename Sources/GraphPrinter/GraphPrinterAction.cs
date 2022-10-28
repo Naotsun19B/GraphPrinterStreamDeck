@@ -26,6 +26,5 @@ namespace GraphPrinter
             await base.OnWillAppear(args);
             await Manager.SetTitleAsync(args.context, "Test");
         }
-
     }
 }
