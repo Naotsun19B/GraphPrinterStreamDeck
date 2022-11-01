@@ -19,6 +19,7 @@
 
 	<!--Dependencies-->
 	<ItemGroup>
+		<PackageReference Include="Fleck" Version="1.2.0" />
 		<PackageReference Include="StreamDeckLib" Version="0.*" />
 		<PackageReference Include="StreamDeckLib.Config" Version="0.*" />
 		<PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.3" />
