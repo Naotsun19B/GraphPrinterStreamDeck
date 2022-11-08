@@ -6,6 +6,5 @@ namespace GraphPrinter.Models
     public class WebSocketSettingsModel
     {
         public string ServerURL { get; set; } = "ws://127.0.0.1:3000";
-        public string ServerProtocol { get; set; } = "ws";
     }
 }

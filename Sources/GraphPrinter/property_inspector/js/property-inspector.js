@@ -7,8 +7,7 @@ let websocket = null,
 	inInfo = null,
 	actionInfo = {},
 	settingsModel = {
-		ServerURL: "ws://127.0.0.1:3000/",
-		ServerProtocol: "ws"
+		ServerURL: "ws://127.0.0.1:3000/"
 	};
 
 function connectElgatoStreamDeckSocket(inPort, inUUID, inRegisterEvent, inInfo, inActionInfo) {
@@ -20,11 +19,9 @@ function connectElgatoStreamDeckSocket(inPort, inUUID, inRegisterEvent, inInfo, 
 	//initialize values
 	if (actionInfo.payload.settings.settingsModel) {
 		settingsModel.ServerURL = actionInfo.payload.settings.settingsModel.ServerURL;
-		settingsModel.ServerProtocol = actionInfo.payload.settings.settingsModel.ServerProtocol;
 	}
 
 	document.getElementById('txtServerURLValue').value = settingsModel.ServerURL;
-	document.getElementById('txtServerProtocolValue').value = settingsModel.ServerProtocol;
 
 	websocket.onopen = function () {
 		const json = {event: inRegisterEvent, uuid: inUUID};
@@ -41,10 +38,6 @@ function connectElgatoStreamDeckSocket(inPort, inUUID, inRegisterEvent, inInfo, 
 				if (jsonObj.payload.settings.settingsModel.ServerURL) {
 					settingsModel.ServerURL = jsonObj.payload.settings.settingsModel.ServerURL;
 					document.getElementById('txtServerURLValue').value = settingsModel.ServerURL;
-				}
-				if (jsonObj.payload.settings.settingsModel.ServerProtocol) {
-					settingsModel.ServerProtocol = jsonObj.payload.settings.settingsModel.ServerProtocol;
-					document.getElementById('txtServerProtocolValue').value = settingsModel.ServerProtocol;
 				}
 				break;
 			default:
