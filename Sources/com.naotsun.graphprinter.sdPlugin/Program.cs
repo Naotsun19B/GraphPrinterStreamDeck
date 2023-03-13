@@ -1,9 +1,9 @@
-﻿// Copyright 2022 Naotsun. All Rights Reserved.
+﻿// Copyright 2023 Naotsun. All Rights Reserved.
 
 using StreamDeckLib;
 using System.Threading.Tasks;
 
-namespace GraphPrinter
+namespace GraphPrinterStreamDeck
 {
     internal class Program
     {

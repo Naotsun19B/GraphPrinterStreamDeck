@@ -11,6 +11,11 @@
 		<RuntimeIdentifiers Condition="'$(Configuration)'=='Release' ">win-x64;osx-x64</RuntimeIdentifiers>
 		<RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
 	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+	  <OutputPath>bin\</OutputPath>
+	  <Optimize>true</Optimize>
+	  <DebugSymbols>false</DebugSymbols>
+	</PropertyGroup>
 
 	<!-- Post build event scripts that deploy to stream deck -->
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition=" '$(Configuration)'=='Debug'">
@@ -94,7 +99,7 @@
 
 	<!-- Build Helper -->
 	<ItemGroup>
-		<Content Include="GraphPrinter.cmd">
+		<Content Include="GraphPrinterStreamDeck.cmd">
 		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
 	</ItemGroup>

@@ -1,0 +1,109 @@
+{
+    "Actions": [
+        {
+            "Icon": "images/actionIcon",
+            "Name": "Copy All Area Of Widget To Clipboard",
+            "States": [
+                {
+                    "Image": "images/actionDefaultImage",
+                    "TitleAlignment": "middle",
+                    "FontSize": "16"
+                }
+            ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "Copy the entire target widget as an image to the clipboard.",
+            "UUID": "com.naotsun.graphprinter.clipboard.all"
+        },
+        {
+            "Icon": "images/actionIcon",
+            "Name": "Copy Selected Area Of Widget To Clipboard",
+            "States": [
+                {
+                    "Image": "images/actionDefaultImage",
+                    "TitleAlignment": "middle",
+                    "FontSize": "16"
+                }
+            ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "Copy the selected area of the target widget to the clipboard as an image.",
+            "UUID": "com.naotsun.graphprinter.clipboard.selected"
+        },
+        {
+            "Icon": "images/actionIcon",
+            "Name": "Print All Area Of Widget",
+            "States": [
+                {
+                    "Image": "images/actionDefaultImage",
+                    "TitleAlignment": "middle",
+                    "FontSize": "16"
+                }
+            ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "Outputs the entire target widget as an image file.",
+            "UUID": "com.naotsun.graphprinter.print.all"
+        },
+        {
+            "Icon": "images/actionIcon",
+            "Name": "Print Selected Area Of Widget",
+            "States": [
+                {
+                    "Image": "images/actionDefaultImage",
+                    "TitleAlignment": "middle",
+                    "FontSize": "16"
+                }
+            ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "Outputs the selected area of the target widget as an image file.",
+            "UUID": "com.naotsun.graphprinter.print.selected"
+        },
+        {
+            "Icon": "images/actionIcon",
+            "Name": "Restore Widget From Image File",
+            "States": [
+                {
+                    "Image": "images/actionDefaultImage",
+                    "TitleAlignment": "middle",
+                    "FontSize": "16"
+                }
+            ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "Restores the state of the widget from the image file.\nYou can only restore from images output from this plugin.",
+            "UUID": "com.naotsun.graphprinter.restore"
+        },
+        {
+            "Icon": "images/actionIcon",
+            "Name": "Open Export Destination Folder",
+            "States": [
+                {
+                    "Image": "images/actionDefaultImage",
+                    "TitleAlignment": "middle",
+                    "FontSize": "16"
+                }
+            ],
+            "SupportedInMultiActions": false,
+            "Tooltip": "Open the folder containing the images saved by this plugin in explorer.",
+            "UUID": "com.naotsun.graphprinter.open"
+        }
+    ],
+    "Category": "Graph Printer",
+    "CategoryIcon": "images/category/categoryIcon",
+    "Disabled":  false,
+    "Author": "Naotsun",
+    "CodePath": "bin/netcoreapp3.1/win-x64/GraphPrinterStreamDeck.exe",
+    "PropertyInspectorPath": "property_inspector/property_inspector.html",
+    "Description": "A plugin that allows you to call the functions of Graph Printer, a plugin for Unreal Engine, from Stream Deck.",
+    "Name": "Graph Printer",
+    "Icon": "images/pluginIcon",
+    "URL": "https://github.com/Naotsun19B/GraphPrinterStreamDeck",
+    "Version": "1.0",
+    "SDKVersion": 2,
+    "Software": {
+        "MinimumVersion":  "4.1"
+    },
+    "OS": [
+        {
+            "Platform": "windows",
+            "MinimumVersion" : "10"
+        }
+    ]
+}

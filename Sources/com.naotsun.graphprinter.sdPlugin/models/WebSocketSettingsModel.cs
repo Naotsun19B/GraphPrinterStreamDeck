@@ -1,6 +1,6 @@
-﻿// Copyright 2022 Naotsun. All Rights Reserved.
+﻿// Copyright 2023 Naotsun. All Rights Reserved.
 
-namespace GraphPrinter.Models
+namespace GraphPrinterStreamDeck.Models
 {
     // The IDE recommends adding abstract, but if we do, it will not work properly.
     public class WebSocketSettingsModel

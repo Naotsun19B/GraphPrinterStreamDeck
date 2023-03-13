@@ -10,7 +10,7 @@ if ($PSSCriptRoot.Length -eq 0) {
 
 
 # Load and parse the plugin project file
-$pluginProjectFile = "$basePath\GraphPrinter.csproj"
+$pluginProjectFile = "$basePath\GraphPrinterStreamDeck.csproj"
 $projectContent = Get-Content $pluginProjectFile | Out-String;
 $projectXML = [xml]$projectContent;
 
@@ -27,7 +27,7 @@ $bindir = "$basePath\bin\Debug\$targetFrameworkName\win-x64"
 
 # Make sure we actually have a directory/build to deploy
 If (-not (Test-Path $bindir)) {
-  Write-Error "The output directory `"$bindir`" was not found.`n You must first build the `"GraphPrinter`" project before calling this script.";
+  Write-Error "The output directory `"$bindir`" was not found.`n You must first build the `"GraphPrinterStreamDeck`" project before calling this script.";
   exit 1;
 }
 

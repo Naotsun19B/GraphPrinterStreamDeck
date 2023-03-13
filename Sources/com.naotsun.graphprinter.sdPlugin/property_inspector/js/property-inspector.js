@@ -1,4 +1,4 @@
-﻿// Copyright 2022 Naotsun. All Rights Reserved.
+﻿// Copyright 2023 Naotsun. All Rights Reserved.
 
 // global websocket, used to communicate from/to Stream Deck software
 // as well as some info about our plugin, as sent by Stream Deck software 
@@ -60,4 +60,3 @@ const setSettings = (value, param) => {
 		websocket.send(JSON.stringify(json));
 	}
 };
-

@@ -8,7 +8,7 @@ Congratulations! You've just taken the first major step in writing a custom plug
 
 Within the directory from which you are reading this file, there exist a few other necessary files. These are:
 
-* `GraphPrinter.csproj`: The C# project file used to build the plugin
+* `GraphPrinterStreamDeck.csproj`: The C# project file used to build the plugin
 * `Program.cs`: The code for the application which will be called by the [Stream Deck software][] when loading and running your plugin.
 * `DefaultPluginAction.cs`: The file in which the functionality of the first (default) action for the plugin will be written. This file provides a basic implementation of an action for your plugin, following a pattern which can be repeated.
 

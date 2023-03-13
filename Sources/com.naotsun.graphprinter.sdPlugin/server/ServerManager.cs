@@ -1,15 +1,15 @@
-﻿// Copyright 2022 Naotsun. All Rights Reserved.
+﻿// Copyright 2023 Naotsun. All Rights Reserved.
 
 using System.Collections.Generic;
 using System.Linq;
 using Fleck;
 
-namespace GraphPrinter
+namespace GraphPrinterStreamDeck.Server
 {
     public class Server
     {
-        private List<IWebSocketConnection> AllSockets = new();
-        private WebSocketServer Instance;
+        private readonly List<IWebSocketConnection> AllSockets = new();
+        private readonly WebSocketServer Instance;
 
         public string Location => Instance.Location;
 
@@ -28,12 +28,9 @@ namespace GraphPrinter
                 };
                 socket.OnMessage = message =>
                 {
-                    foreach (var otherSocket in AllSockets)
+                    foreach (var otherSocket in AllSockets.Where(otherSocket => otherSocket != socket))
                     {
-                        if (otherSocket != socket)
-                        {
-                            otherSocket.Send(message);
-                        }
+                        otherSocket.Send(message);
                     }
                 };
             });
@@ -56,8 +53,8 @@ namespace GraphPrinter
     
     public class ServerManager
     {
-        private static ServerManager Instance = new ServerManager();
-        private List<Server> Servers = new();
+        private static readonly ServerManager Instance = new();
+        private readonly List<Server> Servers = new();
 
         private ServerManager()
         {
@@ -96,20 +93,19 @@ namespace GraphPrinter
             }
 
             var server = Find(location);
-            if (server != null)
+            if (server == null)
             {
-                server.Close();
-                Servers.Remove(server);
+                return;
             }
+            
+            server.Close();
+            Servers.Remove(server);
         }
 
         public void Send(string location, string message)
         {
             var server = Find(location);
-            if (server != null)
-            {
-                server.Send(message);
-            }
+            server?.Send(message);
         }
     }
 }
