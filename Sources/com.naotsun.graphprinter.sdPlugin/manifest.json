@@ -1,11 +1,11 @@
 {
     "Actions": [
         {
-            "Icon": "images/actionIcon",
+            "Icon": "images/actionIcon/clipboardAll",
             "Name": "Copy All Area Of Widget To Clipboard",
             "States": [
                 {
-                    "Image": "images/actionDefaultImage",
+                    "Image": "images/action/clipboardAll",
                     "TitleAlignment": "middle",
                     "FontSize": "16"
                 }
@@ -15,11 +15,11 @@
             "UUID": "com.naotsun.graphprinter.clipboard.all"
         },
         {
-            "Icon": "images/actionIcon",
+            "Icon": "images/actionIcon/clipboardSelected",
             "Name": "Copy Selected Area Of Widget To Clipboard",
             "States": [
                 {
-                    "Image": "images/actionDefaultImage",
+                    "Image": "images/action/clipboardSelected",
                     "TitleAlignment": "middle",
                     "FontSize": "16"
                 }
@@ -29,11 +29,11 @@
             "UUID": "com.naotsun.graphprinter.clipboard.selected"
         },
         {
-            "Icon": "images/actionIcon",
+            "Icon": "images/actionIcon/printAll",
             "Name": "Print All Area Of Widget",
             "States": [
                 {
-                    "Image": "images/actionDefaultImage",
+                    "Image": "images/action/printAll",
                     "TitleAlignment": "middle",
                     "FontSize": "16"
                 }
@@ -43,11 +43,11 @@
             "UUID": "com.naotsun.graphprinter.print.all"
         },
         {
-            "Icon": "images/actionIcon",
+            "Icon": "images/actionIcon/printSelected",
             "Name": "Print Selected Area Of Widget",
             "States": [
                 {
-                    "Image": "images/actionDefaultImage",
+                    "Image": "images/action/printSelected",
                     "TitleAlignment": "middle",
                     "FontSize": "16"
                 }
@@ -57,11 +57,11 @@
             "UUID": "com.naotsun.graphprinter.print.selected"
         },
         {
-            "Icon": "images/actionIcon",
+            "Icon": "images/actionIcon/restore",
             "Name": "Restore Widget From Image File",
             "States": [
                 {
-                    "Image": "images/actionDefaultImage",
+                    "Image": "images/action/restore",
                     "TitleAlignment": "middle",
                     "FontSize": "16"
                 }
@@ -71,11 +71,11 @@
             "UUID": "com.naotsun.graphprinter.restore"
         },
         {
-            "Icon": "images/actionIcon",
+            "Icon": "images/actionIcon/open",
             "Name": "Open Export Destination Folder",
             "States": [
                 {
-                    "Image": "images/actionDefaultImage",
+                    "Image": "images/action/open",
                     "TitleAlignment": "middle",
                     "FontSize": "16"
                 }
@@ -93,7 +93,7 @@
     "PropertyInspectorPath": "property_inspector/property_inspector.html",
     "Description": "A plugin that allows you to call the functions of Graph Printer, a plugin for Unreal Engine, from Stream Deck.",
     "Name": "Graph Printer",
-    "Icon": "images/pluginIcon",
+    "Icon": "images/plugin/pluginIcon",
     "URL": "https://github.com/Naotsun19B/GraphPrinterStreamDeck",
     "Version": "1.0",
     "SDKVersion": 2,
